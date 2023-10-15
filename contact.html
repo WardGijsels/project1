@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="icon" type="image/png" href="W.png">
+    <style>
+        body {
+          margin: 0;
+          font-family: "Lato", sans-serif;
+        }
+        
+        .sidebar {
+          margin: 0;
+          padding: 0;
+          width: 200px;
+          background-color: #000000;
+          position: fixed;
+          height: 100%;
+          overflow: auto;
+        }
+        
+        .sidebar a {
+          display: block;
+          color: white;
+          padding: 16px;
+          text-decoration: none;
+        }
+         
+        .sidebar a.active {
+          background-color: #BB6ADF;
+          color: white;
+        }
+        
+        .sidebar a:hover:not(.active) {
+          background-color: #555;
+          color: white;
+        }
+        
+        div.content {
+          margin-left: 200px;
+          padding: 1px 16px;
+          height: 1000px;
+        }
+        
+        @media screen and (max-width: 700px) {
+          .sidebar {
+            width: 100%;
+            height: auto;
+            position: relative;
+          }
+          .sidebar a {float: left;}
+          div.content {margin-left: 0;}
+        }
+        
+        @media screen and (max-width: 400px) {
+          .sidebar a {
+            text-align: center;
+            float: none;
+          }
+        }
+
+        form {
+            width: 50%;
+            padding: 15px;
+            border: 4px solid #BB6ADF;
+        }
+
+        input,
+        select,
+        textarea {
+            border: 2px solid #BB6ADF;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            resize: none;
+        }
+
+        label {
+            display:block;
+            padding-bottom: 15px;
+            color: rgb(0, 0, 0);
+            font-weight: 700;
+        }
+        </style>
+</head>
+<body>
+    <div class="sidebar">
+        <a href="index.html">Start</a>
+        <a href="hobby.html">Hobby</a>
+        <a href="cv.html">cv</a>
+        <a class="active" href="contact.html">contact</a>
+    </div>
+    <div class="content">
+        <h1>Contact gegevens</h1>
+        <p>U kunt mij bereiken via volgend e-mail adres: <a href="r0994450@student.thomasmore.be">r0994450@student.thomasmore.be</a></p>
+
+        <form method="post" action="//tm-statweb.be/forms.php">
+
+          <div>
+            <label for="email">Email: <input type="email" id="email" name="email" required></label>
+        </div>
+
+        <div>
+          <label for="reactie">Reactie: <textarea rows="5" id="reactie" name="reactie"></textarea>
+        </div>
+
+        <div>
+          <input type="submit" value="Indienen">
+      </div>
+
+        </form>
+    </div>
+
+
+
+</body>
+</html>
