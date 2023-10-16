@@ -5,87 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hobby</title>
     <link rel="icon" type="image/png" href="W.png">
-    <style>
-        body {
-          margin: 0;
-          font-family: "Lato", sans-serif;
-        }
-        
-        .sidebar {
-          margin: 0;
-          padding: 0;
-          width: 200px;
-          background-color: #000000;
-          position: fixed;
-          height: 100%;
-          overflow: auto;
-        }
-        
-        .sidebar a {
-          display: block;
-          color: white;
-          padding: 16px;
-          text-decoration: none;
-        }
-         
-        .sidebar a.active {
-          background-color: #BB6ADF;
-          color: white;
-        }
-        
-        .sidebar a:hover:not(.active) {
-          background-color: #555;
-          color: white;
-        }
-        
-        div.content {
-          margin-left: 200px;
-          padding: 1px 16px;
-          height: 1000px;
-        }
-        
-        @media screen and (max-width: 700px) {
-          .sidebar {
-            width: 100%;
-            height: auto;
-            position: relative;
-          }
-          .sidebar a {float: left;}
-          div.content {margin-left: 0;}
-        }
-        
-        @media screen and (max-width: 400px) {
-          .sidebar a {
-            text-align: center;
-            float: none;
-          }
-        }
-
-        #dynamofoto {
-        float: right;
-        }
-
-        #gamingfoto {
-        float: right;
-        }
-
-        table {
-        width: 100%;
-        border: 1px solid;
-        border-collapse: collapse;
-        }
-
-        th {
-          border: 1px solid;
-          background-color: #BB6ADF;
-          color: white;
-        }
-
-        tr {
-          border: 1px solid;
-          background-color: #e8ddec;
-        }
-        </style>
+    <link rel="stylesheet" href="huisstijl.css">
 </head>
 <body>
     <div class="sidebar">
@@ -120,48 +40,48 @@
 
     <h2>Top 10 favoriete games</h2>
 
-<table>
-  <tr>
+<table id="topgames">
+  <tr class="topgamestr">
     <th>Game</th>
     <th>Genre</th>
   </tr>
-  <tr>
+  <tr class="topgamestr">
     <td>Overwatch</td>
     <td>First Person Shooter</td>
   </tr>
-  <tr>
+  <tr class="topgamestr">
     <td>Call of Duty: Black Ops III</td>
     <td>First Person Shooter</td>
   </tr>
-  <tr>
+  <tr class="topgamestr">
     <td>Pokémon Black 2</td>
     <td>RPG</td>
   </tr>
-  <tr>
+  <tr class="topgamestr">
     <td>Persona 5 Royal</td>
     <td>RPG</td>
   </tr>
-  <tr>
+  <tr class="topgamestr">
     <td>Spider-Man</td>
     <td>Action-adventure</td>
   </tr>
-  <tr>
+  <tr class="topgamestr">
     <td>Super Mario Odyssey</td>
     <td>Platformspel</td>
   </tr>
-  <tr>
+  <tr class="topgamestr">
     <td>Fortnite</td>
     <td>Battle Royale</td>
   </tr>
-  <tr>
+  <tr class="topgamestr">
     <td>Infamous: Second Son</td>
     <td>Action-adventure</td>
   </tr>
-  <tr>
+  <tr class="topgamestr">
     <td>Doom Eternal</td>
     <td>First Person Shooter</td>
   </tr>
-  <tr>
+  <tr class="topgamestr">
     <td>Spider-Man: Miles Morales</td>
     <td>Action-adventure</td>
   </tr>
