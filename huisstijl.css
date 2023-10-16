@@ -54,10 +54,10 @@ body {
   }
 
   form {
-      width: 50%;
-      padding: 15px;
-      border: 4px solid #BB6ADF;
-  }
+    width: 50%;
+    padding: 15px;
+    border: 4px solid #BB6ADF;
+}
 
   input,
   select,
