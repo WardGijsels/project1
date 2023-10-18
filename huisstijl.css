@@ -143,10 +143,14 @@ th {
 
 #dynamofoto {
   float: right;
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
 
 #gamingfoto {
   float: right;
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
 
 #topgames {
@@ -168,4 +172,11 @@ th {
 
 #passfoto {
   float: right;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+#visiblefoto {
+  float: right;
+  margin-left: 20px;
 }
